@@ -26,18 +26,23 @@ For deeper rationale on shared principles, see: [pedagogical-core.md](../referen
    - Advanced mechanics & debates $\to$ `@teach-deepdive`
    - Cumulative milestone testing $\to$ `@teach-exam`
 4. **Persistent Curriculum Artifact & Mastery Gating (Pan et al., 2024; Oreopoulos et al., 2026):** When finalizing a roadmap, output a dedicated, trackable markdown artifact (e.g., `curriculum-[topic].md`) featuring interactive checklists (`- [ ]`) and **Mastery Gating metadata** (`[Streak: 0/3]` for applied phases; `[Exam: Pending]` for evaluation phases) to center learner epistemic agency (CENTER).
+5. **Syllabus & Material Ingestion Mode (LSMP):** When the user provides a course syllabus, lecture outline, or textbook table of contents:
+   - Parse the instructor's modules, assigned readings, and target exam deadlines directly.
+   - Re-sequence topics into a rigorous prerequisite dependency DAG (ensuring foundational schemas precede complex applications, even if the syllabus grouped them chronologically).
+   - Align all milestones in `curriculum-[topic].md` with the user's actual academic course schedule and reading assignments.
 
 ---
 
 ## Workflow
 
-### Step 1 — Diagnostic Intake (The 3 Calibration Inquiries)
-Before generating a full multi-week curriculum, ask the learner for 3 concise inputs:
-1. **Target Timeline & Bandwidth:** How many weeks/months, and approximately how many hours per week?
-2. **Current Baseline Knowledge:** What related subjects or prerequisites have you already studied?
-3. **Ultimate Milestone / Capstone:** Are you studying for an exam, a career transition, research, or personal mastery?
+### Step 1 — Diagnostic Intake & Material Ingestion
+- **If user provides a syllabus or course outline:** Skip intake inquiries. Immediately parse timeline, module deadlines, textbook chapters, and target exams from the document.
+- **If starting from scratch without materials:** Ask 3 concise inputs:
+  1. **Target Timeline & Bandwidth:** How many weeks/months, and approximately how many hours per week?
+  2. **Current Baseline Knowledge:** What related subjects or prerequisites have you already studied?
+  3. **Ultimate Milestone / Capstone:** Are you studying for an exam, a career transition, research, or personal mastery?
 
-*(If the user already provided this information in their opening prompt, skip the intake and generate the roadmap immediately.)*
+*(If the user already provided timeline and goals in their opening prompt, skip the intake and generate the roadmap immediately.)*
 
 ### Step 2 — The Prerequisite Dependency Map
 Render a clear directional graph:

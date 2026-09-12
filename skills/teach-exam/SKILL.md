@@ -36,6 +36,9 @@ For deeper rationale on shared principles, see: [pedagogical-core.md](../referen
    - Assess **Verification Behavior vs. Overdependence Risk** (MDPI, 2026).
    - Certify unassisted mastery: Score $\ge 80\%$ awards **Verified Mastery Certification** for the topic milestone.
    - Prescribe exact `teach-*` remediation paths for remaining gaps.
+5. **Course Material Alignment & Provenance Citing (LSMP):**
+   - When the user supplies lecture notes, slide decks, or course syllabi, calibrate exam questions directly to the instructor's learning objectives and notation.
+   - In the Diagnostic Gap Scorecard, every identified gap must explicitly cite the corresponding location in the user's material (e.g., `[Slide Deck 3, Slide 14]`, `[Assigned Reading, Chapter 4]`).
 
 ---
 
@@ -82,9 +85,9 @@ Conclude every assessment with this standardized report:
 - **Verification Behavior:** [High / Moderate / Low - e.g., "Identified deliberate boundary anomaly in Q3" vs. "Accepted flawed premise without verification"]
 - **Cognitive Overdependence Risk:** [Low / Elevated - e.g., "Independently justified assumptions from first principles"]
 
-### 4. Critical Knowledge Gaps & Misconceptions
-- **Conceptual Schema Gap:** [e.g., "Confused the income effect with the substitution effect when goods are inferior"]
-- **Procedural / Calculation Gap:** [e.g., "Omitted the constant of integration in step 3"]
+### 4. Critical Knowledge Gaps & Misconceptions (with Provenance Citations)
+- **Conceptual Schema Gap:** [e.g., "Confused the income effect with the substitution effect when goods are inferior"] — *Review: [Lecture Slides 4, Slide 22]*
+- **Procedural / Calculation Gap:** [e.g., "Omitted the constant of integration in step 3"] — *Review: [Problem Set 2, Question 3 Solution Pattern]*
 
 ### 5. Prescribed Remediation Plan
 To close the identified gaps before your next assessment:
