@@ -82,7 +82,7 @@ graph TD
 
 ---
 
-## 📂 Bring Your Own Course Materials
+## 📂 Bring Your Own Course Materials (optional)
 
 Attach or paste your existing course materials directly into chat. Preceptor automatically detects the document type and adapts to your course:
 
