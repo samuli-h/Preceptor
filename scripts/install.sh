@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Preceptor: Academic Learning Engine Installer (macOS & Linux)
 # Usage:
-#   curl -fsSL https://raw.githubusercontent.com/<owner>/preceptor/main/scripts/install.sh | bash
+#   curl -fsSL https://raw.githubusercontent.com/samuli-h/preceptor/main/scripts/install.sh | bash
 #   bash scripts/install.sh [--target all|claude|cursor|windsurf|antigravity|copilot|cline] [--global|--project]
 
 set -e
@@ -16,8 +16,8 @@ NC='\033[0m' # No Color
 
 TARGET="auto"
 SCOPE="global"
-REPO_URL="https://github.com/<owner>/preceptor"
-RAW_URL="https://raw.githubusercontent.com/<owner>/preceptor/main"
+REPO_URL="https://github.com/samuli-h/preceptor"
+RAW_URL="https://raw.githubusercontent.com/samuli-h/preceptor/main"
 
 while [[ $# -gt 0 ]]; do
   case "$1" in

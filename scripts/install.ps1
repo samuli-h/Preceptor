@@ -4,7 +4,7 @@
 .DESCRIPTION
     Installs Preceptor into Antigravity, Claude Code, Cursor, Windsurf, Copilot, or Cline.
 .EXAMPLE
-    irm https://raw.githubusercontent.com/<owner>/preceptor/main/scripts/install.ps1 | iex
+    irm https://raw.githubusercontent.com/samuli-h/preceptor/main/scripts/install.ps1 | iex
 .EXAMPLE
     .\scripts\install.ps1 -Target Cursor -Scope Project
 #>
@@ -42,7 +42,7 @@ if (Test-Path $LocalSkills) {
     $TempDir = Join-Path $env:TEMP ([System.IO.Path]::GetRandomFileName())
     New-Item -ItemType Directory -Path $TempDir -Force | Out-Null
     try {
-        git clone --depth 1 "https://github.com/<owner>/preceptor.git" (Join-Path $TempDir "suite") 2>$null
+        git clone --depth 1 "https://github.com/samuli-h/preceptor.git" (Join-Path $TempDir "suite") 2>$null
         $SrcSkills = Join-Path $TempDir "suite\skills"
         $SrcDist = Join-Path $TempDir "suite\dist"
     } catch {
