@@ -1,6 +1,6 @@
 # Core Pedagogical Principles & Turn-Taking Standards
 
-This document defines the shared pedagogical doctrine for **Preceptor**. All skills in the suite embed their most critical rules inline and reference this document for the broader theoretical rationale grounded in modern educational research and LLM-ITS empirical evaluations (synthesized from 37 curated full-text sources in `internal/empirical_evidence_dossier.md`).
+This document defines the shared pedagogical doctrine for **Preceptor**. All skills in the suite embed their most critical rules inline and reference this document for the broader theoretical rationale grounded in modern educational research and LLM-ITS empirical evaluations (synthesized from 37 curated full-text sources in [evidence-dossier.md](./evidence-dossier.md)).
 
 ---
 

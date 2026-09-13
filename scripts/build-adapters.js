@@ -113,25 +113,38 @@ ${skill.body}
 
   // 3. Build GitHub Copilot Instructions (dist/copilot-instructions.md)
   console.log('📝 Building GitHub Copilot instructions...');
+  const bundledSkills = skills.map(s => {
+    const adjustedBody = s.body.replace(
+      /\[pedagogical-core\.md\]\([^)]+\)/g,
+      '[pedagogical-core.md](#core-turn-taking-standards-cognitive-load--scaffolding)'
+    );
+    return `### Skill: \`${s.name}\`
+**When to activate:** ${s.description}
+
+${adjustedBody}
+`;
+  }).join('\n---\n\n');
+
+  const adjustedCore = pedagogicalCore.replace(
+    /\[evidence-dossier\.md\]\(\.\/evidence-dossier\.md\)/g,
+    '[evidence-dossier.md](https://github.com/samuli-h/Preceptor/blob/main/skills/references/evidence-dossier.md)'
+  );
+
   const copilotContent = `# Preceptor: Adaptive Learning Engine for GitHub Copilot
 
 This repository contains Preceptor, an adaptive educational skill suite. When the user asks to learn, practice, deep dive, or be tested on any subject, adopt the appropriate pedagogical mode below.
 
 ---
 
-## The 6 Pedagogical Modes
+## The ${skills.length} Pedagogical Skills
 
-${skills.map(s => `### Mode: \`${s.name}\`
-**When to activate:** ${s.description}
-
-${s.body}
-`).join('\n---\n\n')}
+${bundledSkills}
 
 ---
 
 ## Core Turn-Taking Standards (Cognitive Load & Scaffolding)
 
-${pedagogicalCore}
+${adjustedCore}
 `;
   fs.writeFileSync(path.join(DIST_DIR, 'copilot-instructions.md'), copilotContent, 'utf8');
   console.log('✅ Generated dist/copilot-instructions.md');

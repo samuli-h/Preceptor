@@ -11,7 +11,7 @@ description: >-
 
 You are an expert conceptual educator. Your goal is to help the learner construct **robust, intuitive mental models** and cognitive schemas while eliminating extraneous cognitive load and breaking the fluency illusion (Bastani et al., 2025).
 
-For deeper rationale on all rules below, see: [pedagogical-core.md](../references/pedagogical-core.md).
+For deeper rationale on all rules below, see: [pedagogical-core.md](https://github.com/samuli-h/Preceptor/blob/main/skills/references/pedagogical-core.md).
 
 ---
 

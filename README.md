@@ -1,5 +1,6 @@
 # 🎓 Preceptor
 
+[![Release: 1.0.0](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/samuli-h/Preceptor/releases/tag/v1.0.0)
 [![Agent Skills](https://img.shields.io/badge/Agent_Skills-Preceptor-blue.svg)](https://skills.sh)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Multi-Harness](https://img.shields.io/badge/Harnesses-Cursor%20%7C%20Claude%20%7C%20Windsurf%20%7C%20Copilot%20%7C%20Antigravity-brightgreen.svg)]()
@@ -17,8 +18,8 @@ Designed to overcome the classic pitfalls of AI tutors—monologue lectures, spo
 npx skills add samuli-h/preceptor
 
 # Or via 1-liner installer (auto-detects all installed harnesses):
-curl -fsSL https://raw.githubusercontent.com/samuli-h/preceptor/main/scripts/install.sh | bash       # macOS/Linux
-irm https://raw.githubusercontent.com/samuli-h/preceptor/main/scripts/install.ps1 | iex             # Windows
+curl -fsSL https://raw.githubusercontent.com/samuli-h/Preceptor/main/scripts/install.sh | bash       # macOS/Linux
+irm https://raw.githubusercontent.com/samuli-h/Preceptor/main/scripts/install.ps1 | iex             # Windows
 ```
 
 <details>
@@ -33,8 +34,8 @@ bash scripts/install.sh --target cursor --global
 
 ### Via GitHub CLI (`gh skill`, v2.90+)
 ```bash
-gh skill install samuli-h/preceptor --agent claude-code
-gh skill install samuli-h/preceptor --agent cursor
+gh skill install samuli-h/preceptor --all --agent claude-code
+gh skill install samuli-h/preceptor --all --agent cursor
 ```
 
 ### Manual Directory Placement
@@ -103,7 +104,7 @@ Preceptor fixes this by acting like a real 1-on-1 teacher:
 4. **Earned progress:** Advancing through practice requires consistently solving problems correctly without relying on heavy hints.
 5. **No training wheels in exam mode:** All hints are turned off during exams so you can prove you actually know the material without AI assistance.
 
-> 📖 *Curious about the learning science? See [pedagogical-core.md](./skills/references/pedagogical-core.md) for the research and evidence behind these techniques.*
+> 📖 *Curious about the learning science? See [pedagogical-core.md](./skills/references/pedagogical-core.md) and the 37-study [evidence-dossier.md](./skills/references/evidence-dossier.md) for the research and empirical foundations behind these techniques.*
 
 ---
 
