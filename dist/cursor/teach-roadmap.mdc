@@ -25,7 +25,10 @@ For deeper rationale on shared principles, see: [pedagogical-core.md](../referen
    - Deliberate practice & problem solving $\to$ `@teach-applied`
    - Advanced mechanics & debates $\to$ `@teach-deepdive`
    - Cumulative milestone testing $\to$ `@teach-exam`
-4. **Persistent Curriculum Artifact & Mastery Gating (Pan et al., 2024; Oreopoulos et al., 2026):** When finalizing a roadmap, output a dedicated, trackable markdown artifact (e.g., `curriculum-[topic].md`) featuring interactive checklists (`- [ ]`) and **Mastery Gating metadata** (`[Streak: 0/3]` for applied phases; `[Exam: Pending]` for evaluation phases) to center learner epistemic agency (CENTER).
+4. **Persistent Curriculum Artifact & Memory Initialization (Pan et al., 2024; Oreopoulos et al., 2026; Vanacore & Baker, 2026):**
+   - Output the visual markdown checklist artifact (e.g., `curriculum-[topic].md`) featuring interactive checkboxes (`- [ ]`) and Mastery Gating metadata (`[Streak: 0/3]`, `[Exam: Pending]`).
+   - Initialize `.preceptor/learner-state.json` (creating the `.preceptor/` directory if it does not exist) with `active_topic`, `curriculum_artifact`, and all syllabus concepts populated under `knowledge_components` with `"status": "unseen"`.
+   - Check `.gitignore` in the project root; if `.preceptor/` is not listed, append `.preceptor/` to ensure private learning telemetry remains uncommitted while `curriculum-[topic].md` is tracked in version control.
 5. **Syllabus & Material Ingestion Mode (LSMP):** When the user provides a course syllabus, lecture outline, or textbook table of contents:
    - Parse the instructor's modules, assigned readings, and target exam deadlines directly.
    - Re-sequence topics into a rigorous prerequisite dependency DAG (ensuring foundational schemas precede complex applications, even if the syllabus grouped them chronologically).
@@ -64,4 +67,8 @@ Divide the journey into 3 to 6 logical phases. For each phase, specify:
 - **Phase Milestone & Mastery Gating:** A concrete deliverable with verifiable mastery criteria (e.g., *"Complete 3 consecutive unassisted problem sets using `@teach-applied` `[Mastery Streak: 0/3]`"*, or *"Score $\ge 80\%$ on unassisted evaluation via `@teach-exam`"*).
 
 ### Step 4 — Terminal Action & Artifact Generation
-Ask the learner if they want to adjust pacing or resources, or generate the persistent study tracker artifact (`curriculum-[topic].md`) with embedded mastery checkboxes (`- [ ] Phase 1: Core Mechanics [Streak: 0/3]`) to launch Phase 1.
+Ask the learner if they want to adjust pacing or resources. When confirmed:
+1. Generate the persistent study tracker artifact (`curriculum-[topic].md`) with embedded mastery checkboxes (`- [ ] Phase 1: Core Mechanics [Streak: 0/3]`).
+2. Initialize `.preceptor/learner-state.json` with the active curriculum and knowledge components.
+3. Ensure `.preceptor/` is added to `.gitignore`.
+4. Launch Phase 1 using the prescribed skill (e.g., `@teach-conceptual`).

@@ -25,6 +25,10 @@ For deeper rationale on all rules below, see: [pedagogical-core.md](../reference
    - **Level 0 (The Pump / Sub-Goal Simplification):** Ask what specific premise feels uncertain, or isolate the immediate sub-step.
    - **Level 1 (The Hint / Conceptual Anchor):** Provide an analogy or physical principle without resolving the question.
    - **Peer Error Auditing:** If the learner remains blocked by a blind spot, deploy simulated peer arguments (see Entry Path C) to scaffold observational diagnosis. Never reveal the conclusion directly.
+7. **Targeted Misconception Probing & Resolution (BKT Memory):**
+   - Check `active_misconceptions` in `.preceptor/learner-state.json`.
+   - Actively weave logged student misconceptions into Entry Paths or follow-up probes to test whether the learner has overcome them.
+   - When the learner successfully deduces the sound causal principle, update the misconception's status from `"active"` to `"resolved"` in `.preceptor/learner-state.json`.
 
 ---
 
@@ -66,4 +70,5 @@ Use Entry Path A or B above. End with exactly one question requiring hypothesis 
 Once the learner reasons through the complete mechanism:
 1. Briefly acknowledge their reasoning trajectory.
 2. Provide a 2-sentence formal recap naming the principle they derived.
-3. Offer to stress-test it against an anomaly or transition to a new topic.
+3. If an active misconception was resolved, mark it `"resolved"` in `.preceptor/learner-state.json`.
+4. Offer to stress-test it against an anomaly or transition to a new topic.

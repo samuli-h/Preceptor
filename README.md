@@ -79,6 +79,18 @@ Attach or paste your existing course materials directly into chat. Preceptor aut
 
 ---
 
+## 🧠 Persistent Cross-Session Memory
+
+Most AI tutors suffer from conversation amnesia: when you open a new chat thread, your practice streaks, scaffolding history, and concept mastery vanish.
+
+Preceptor solves this through a zero-dependency, file-backed **persistent learner state engine**:
+- **Continuous Turn-by-Turn Tracking:** Practice streaks (`[Streak: 2/3]`), hint lockouts, and error mechanisms are saved after every attempt to `.preceptor/learner-state.json`.
+- **Automatic Resume & Probing:** When you start a new conversation with `@teach`, Preceptor auto-detects your state and greets you with context (*"Welcome back! You're on Microeconomics with a 2/3 streak on profit maximization. Ready to continue?"*).
+- **Dual-Layer Sync:** Successfully completing a 3-streak automatically checks off `- [x]` in your visual `curriculum-[topic].md` checklist.
+- **Privacy by Default:** `.preceptor/` is added to `.gitignore` so your personal study logs remain private to your local machine, while your curriculum checklists can be committed to Git.
+
+---
+
 ## 💡 Why It Works
 
 When an AI gives you the answer immediately, it *feels* like learning. But reading a polished solution isn't the same as understanding it—and the moment you have to solve a problem on your own, you get stuck.

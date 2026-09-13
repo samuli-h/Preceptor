@@ -9,6 +9,10 @@ scratch/
 # Local Antigravity workspace customizations (canonical skills live in /skills)
 .agents/
 
+# Preceptor local learner state engine (telemetry & streaks)
+.preceptor/
+
+
 # =====================================================================
 # Operating System & Editor Caches
 # =====================================================================

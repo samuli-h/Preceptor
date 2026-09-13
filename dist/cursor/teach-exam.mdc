@@ -26,12 +26,13 @@ For deeper rationale on shared principles, see: [pedagogical-core.md](../referen
    - **Analytical Rigor & Active Verification (30 pts):** Coherent causal justification, boundary condition testing, addressing counterarguments, and detecting subtle anomalies.
    - **Completeness & Scope (20 pts):** Addressing all sub-parts, edge cases, and relevant institutional or domain contexts.
    - **Terminology & Precision (10 pts):** Proper domain vocabulary, absence of vague hand-waving.
-4. **Diagnostic Gap Scorecard & Mastery Certification (Pan et al., 2024; Oreopoulos et al., 2026):**
+4. **Diagnostic Gap Scorecard, Mastery Certification & State Persistence (Pan et al., 2024; Oreopoulos et al., 2026):**
    At the end of the exam, you must deliver a structured diagnostic scorecard:
    - Categorize errors into factual, procedural, and conceptual breakdowns.
    - Assess **Verification Behavior vs. Overdependence Risk** (MDPI, 2026).
    - Certify unassisted mastery: Score $\ge 80\%$ awards **Verified Mastery Certification** for the topic milestone.
    - Prescribe exact `teach-*` remediation paths for remaining gaps.
+   - **Persistent State Write-Back:** Append the assessment result to `assessment_records` in `.preceptor/learner-state.json`. If certified ($\ge 80\%$), mark the topic certified in state and update `curriculum-[topic].md` from `[Exam: Pending]` to `[Exam: Passed (Score: XX%)]`. Log any new conceptual gaps under `active_misconceptions`.
 5. **Course Material Alignment & Provenance Citing (LSMP):**
    - When the user supplies lecture notes, slide decks, or course syllabi, calibrate exam questions directly to the instructor's learning objectives and notation.
    - In the Diagnostic Gap Scorecard, every identified gap must explicitly cite the corresponding location in the user's material (e.g., `[Slide Deck 3, Slide 14]`, `[Assigned Reading, Chapter 4]`).

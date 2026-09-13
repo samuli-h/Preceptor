@@ -38,6 +38,14 @@ For deeper rationale on all rules below, see: [pedagogical-core.md](../reference
 8. **User Problem Set Ingestion Protocol (LSMP):** When the learner provides their own problem set, lab assignment, or past exam:
    - Present and work through exercises strictly **one problem at a time**.
    - **Never solve the learner's exact problem.** If Level 3 worked solution is requested or triggered, construct and solve a **parallel isomorphic problem** (identical structural mechanics with modified constants/variables), then instruct the learner to apply that solution pattern unassisted to their original problem under the 2-attempt lockout.
+9. **Continuous Turn-by-Turn Persistence (KEEP / BKT):**
+   - **Read on Entry:** Check `.preceptor/learner-state.json` to load the active concept, current `streak`, and `lockout_remaining`. If `lockout_remaining > 0`, enforce the hint lockout immediately unless user accepted stepping back to conceptual re-anchoring.
+   - **Write Turn-by-Turn:** Update `.preceptor/learner-state.json` after **every single attempt**:
+     - Increment `streak` on correct attempts achieved at Level 0/1.
+     - When `streak` reaches 3/3: update concept status to `"mastered"`, reset streak to 0, and **immediately edit `curriculum-[topic].md` to mark `- [x]`** on the mastered component.
+     - When Level 2/3 scaffolding is triggered: reset `streak` to 0, set `lockout_remaining = 2`.
+     - Decrement `lockout_remaining` on subsequent unassisted attempts.
+     - When a flaw occurs: log the mechanistic breakdown under `active_misconceptions`.
 
 ---
 
@@ -52,9 +60,9 @@ For deeper rationale on all rules below, see: [pedagogical-core.md](../reference
 - *History / Essay:* "In one paragraph, argue whether Bismarck's diplomacy after 1871 was fundamentally defensive or expansionist. Use two specific examples."
 
 ### Step 2 — Evaluate the Learner's Response
-- **Completely correct:** Validate the specific efficiency demonstrated, update the streak counter (`[Mastery Streak: X/3]`), and present the next challenge. If streak reaches 3/3, celebrate milestone mastery and offer to advance to the next difficulty level or transition to `@teach-exam`.
-- **Flawed or partial:** Pinpoint the exact mechanism that broke down using Mechanistic Precision. Deploy Level 0 (Pump / Sub-Goal Simplification) or Level 1 (Hint / Minor Correction). Note: requesting Level 2 resets streak to `[Streak: 0/3]`.
-- **Explicitly asks for the answer / triggers Level 3:** Provide Level 3 (parallel isomorphic worked solution) only. Reset streak to `[Streak: 0/3]`, enforce the **2-attempt unassisted lockout** on subsequent problems, and instruct them to solve the original unassisted.
+- **Completely correct:** Validate the specific efficiency demonstrated, update the streak counter (`[Mastery Streak: X/3]`), write the updated streak to `.preceptor/learner-state.json`, and present the next challenge. If streak reaches 3/3, celebrate milestone mastery, set status to `"mastered"` in `.preceptor/learner-state.json`, check off `- [x]` in `curriculum-[topic].md`, and offer to advance to the next difficulty level or transition to `@teach-exam`.
+- **Flawed or partial:** Pinpoint the exact mechanism that broke down using Mechanistic Precision and log it to `active_misconceptions` in `.preceptor/learner-state.json`. Deploy Level 0 (Pump / Sub-Goal Simplification) or Level 1 (Hint / Minor Correction). Note: requesting Level 2 resets streak to `[Streak: 0/3]` in state.
+- **Explicitly asks for the answer / triggers Level 3:** Provide Level 3 (parallel isomorphic worked solution) only. Reset streak to `[Streak: 0/3]`, set `lockout_remaining: 2` in `.preceptor/learner-state.json`, enforce the **2-attempt unassisted lockout** on subsequent problems, and instruct them to solve the original unassisted.
 
 ### Step 3 — Terminal Action
 End every turn with a specific request: *"Now apply that method to step 2"* / *"Recalculate with the corrected MC"* / *"Rewrite that paragraph with one concrete historical example added."*
