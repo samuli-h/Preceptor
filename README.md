@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Multi-Harness](https://img.shields.io/badge/Harnesses-Cursor%20%7C%20Claude%20%7C%20Windsurf%20%7C%20Copilot%20%7C%20Antigravity-brightgreen.svg)]()
 
-**Preceptor** turns your AI coding assistant into an active 1-on-1 academic tutor. Instead of spoon-feeding code and answers, it guides your reasoning, provides scaffolded hints when you're stuck, and tests your mastery across **Cursor, Claude Code, Windsurf, GitHub Copilot, and Google Antigravity**.
+**Preceptor** turns your AI assistant into an active 1-on-1 academic tutor. Instead of spoon-feeding solutions and passive summaries, it guides your reasoning through scaffolded inquiry, deliberate practice, and unassisted mastery checks.
 
 Designed to overcome the classic pitfalls of AI tutors—monologue lectures, spoon-feeding answers, and tech-only bias—by embedding proven teaching techniques into modular agent skills.
 
@@ -52,33 +52,19 @@ gh skill install samuli-h/preceptor --agent cursor
 
 ---
 
-## 🔄 The Learning Lifecycle
+## 🔄 The 7 Skills Across the Learning Lifecycle
 
-You don't need to choose which skill to use ahead of time. Just prompt **`@teach <anything>`**, and Preceptor figures out what you need in one turn:
+You don't need to choose which skill to use ahead of time. Just prompt **`@teach <anything>`**, and Preceptor diagnoses your goal in one turn and routes you to the right phase of the learning journey—or invoke any specialized skill directly:
 
-```mermaid
-graph TD
-    A["@teach (Master Router)"] --> B["1. Plan & Structure<br><b>@teach-roadmap</b>"]
-    A --> C["2. Intuition & Mental Models<br><b>@teach-conceptual</b>"]
-    A --> D["3. Guided Discovery<br><b>@teach-socratic</b>"]
-    A --> E["4. Deliberate Practice<br><b>@teach-applied</b>"]
-    A --> F["5. First Principles & Rigor<br><b>@teach-deepdive</b>"]
-    A --> G["6. Testing & Defense<br><b>@teach-exam</b>"]
-```
-
----
-
-## 📚 The 7 Skills at a Glance
-
-| Skill | Mode | What It Does | Trigger Example |
-| :--- | :--- | :--- | :--- |
-| **`@teach`** | **Master Router** | Diagnoses your goal in 1 turn or automatically routes uploaded course materials. | `@teach I want to learn monetary policy` |
-| **`@teach-roadmap`** | **Curriculum Architect** | Generates multi-week study plans, milestone checklists, and visual prerequisite maps. | `@teach-roadmap 8-week syllabus for microeconomics from scratch` |
-| **`@teach-conceptual`** | **Mental Models & Intuition** | Explains complex ideas using grounded analogies, visuals, and unassisted transfer checks. | `@teach-conceptual Explain opportunity cost with an everyday analogy` |
-| **`@teach-socratic`** | **Guided Discovery** | Never gives direct answers; challenges your reasoning with one focused question per turn. | `@teach-socratic Guide me through why the Weimar Republic collapsed` |
-| **`@teach-applied`** | **Deliberate Practice** | Practice problem coach with progressive hints and streak-based mastery checks. | `@teach-applied Practice problem on deadweight loss with hints` |
-| **`@teach-deepdive`** | **First Principles & Proofs** | Advanced rigor: formal derivations, boundary conditions, and competing perspectives. | `@teach-deepdive Analyze Keynesian vs Austrian business cycle theory` |
-| **`@teach-exam`** | **Closed-Book Mock Examiner** | Realistic closed-book tests and oral defenses with zero hints, objective scoring, and gap reports. | `@teach-exam 3-question closed-book exam on macroeconomics with grading` |
+| Lifecycle Stage | Skill | Mode | What It Does | Trigger Example |
+| :--- | :--- | :--- | :--- | :--- |
+| **Router** | **`@teach`** | **Master Orchestrator** | Diagnoses your learning goal in 1 turn or automatically routes uploaded course materials. | `@teach I want to learn monetary policy` |
+| **Phase 1 · Plan** | **`@teach-roadmap`** | **Curriculum Architect** | Generates multi-week study plans, milestone checklists, and visual prerequisite maps. | `@teach-roadmap 8-week syllabus for microeconomics from scratch` |
+| **Phase 2 · Learn** | **`@teach-conceptual`** | **Mental Models & Intuition** | Explains complex ideas using grounded analogies, visuals, and unassisted transfer checks. | `@teach-conceptual Explain opportunity cost with an everyday analogy` |
+| **Phase 3 · Explore** | **`@teach-socratic`** | **Guided Discovery** | Never gives direct answers; challenges your reasoning with one focused question per turn. | `@teach-socratic Guide me through why the Weimar Republic collapsed` |
+| **Phase 4 · Practice** | **`@teach-applied`** | **Deliberate Practice** | Practice problem coach with progressive hints and streak-based mastery checks. | `@teach-applied Practice problem on deadweight loss with hints` |
+| **Phase 5 · Deepen** | **`@teach-deepdive`** | **First Principles & Rigor** | Advanced rigor: formal derivations, boundary conditions, and competing perspectives. | `@teach-deepdive Analyze Keynesian vs Austrian business cycle theory` |
+| **Phase 6 · Test** | **`@teach-exam`** | **Closed-Book Mock Examiner** | Realistic closed-book tests and oral defenses with zero hints, objective scoring, and gap reports. | `@teach-exam 3-question closed-book exam on macroeconomics with grading` |
 
 ---
 
