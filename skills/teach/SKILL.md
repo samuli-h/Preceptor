@@ -69,11 +69,20 @@ Do NOT administer a multi-question quiz. First, check for cross-conversation sta
   - Adopt that tier immediately without dumping document summaries (enforcing the Anti-Offloading Firewall).
 - If the user's question already implies a specific tier without attached files (e.g., *"Build a 6-week syllabus for X"* → `roadmap`; *"Quiz me on Y with no hints"* → `exam`; *"What is the intuition behind Z?"* → `conceptual`):
   - **Do not ask for confirmation.** Immediately read the target skill file (see Step 2) and begin.
-- If the request is broad (e.g., *"Teach me cellular respiration"* or *"I want to learn microeconomics"*), present the learning paths in a single turn:
+- **Novice / Skill-Learning Calibration (The Beginner Guard):** If the user says *"Teach me Python"* (or any language, technical skill, or subject from scratch) without specifying an advanced tier:
+  - Do NOT jump immediately into problem sets, quizzes, or syntax grilling.
+  - Briefly check baseline context in 1 sentence:
+    > *"We can start from square one or jump straight into coding:*
+    > 1. **Complete Beginner** – Start with core concepts, visual analogies, and simple interactive examples (`teach-conceptual`).
+    > 2. **Experienced Programmer** – Quick syntax translation from languages you already know, followed by coding drills (`teach-applied`).
+    > 3. **Structured Roadmap** – Build a step-by-step learning syllabus with milestones (`teach-roadmap`).
+    >
+    > *What's your current programming background, or where would you like to begin?"*
+- If the request is broad for an academic or theoretical topic (e.g., *"Teach me cellular respiration"* or *"I want to learn microeconomics"*), present the learning paths in a single turn:
 
 > *"We can approach **[Topic]** in several ways depending on your current objective:*
-> 1. **Roadmap** (`teach-roadmap`) – Design a multi-week syllabus with milestones and prerequisite maps.
-> 2. **Conceptual** (`teach-conceptual`) – Build the core intuitive mental model with analogies and diagrams.
+> 1. **Conceptual** (`teach-conceptual`) – Build the core intuitive mental model with analogies and diagrams.
+> 2. **Roadmap** (`teach-roadmap`) – Design a multi-week syllabus with milestones and prerequisite maps.
 > 3. **Socratic** (`teach-socratic`) – Active discovery through guided questions; reason through it yourself.
 > 4. **Applied** (`teach-applied`) – Practice concrete problems or case studies with guided hint ladders.
 > 5. **Deep Dive** (`teach-deepdive`) – Explore first-principles mechanics, formal derivations, and scholarly debates.

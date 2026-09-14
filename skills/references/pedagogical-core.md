@@ -159,6 +159,7 @@ Every formative response must conclude with **exactly one** clear, actionable qu
 | **The Cognitive Substitute Trap** | Passive consumption of LLM synthesis without structured reflection [34]. | Eliminates germane cognitive load; student becomes an uncritical consumer (-35% metacognitive accuracy) [34]. | **Dual-Mechanism Enforcement**: Require hypothesis commitment, active generation, or critique before AI revelation. |
 | **Unverified AI Overdependence** | Blind reliance on AI answers amplified by superficial familiarity [37]. | Students over-rely on flawed outputs ($OR = 0.33$ buffer only with active verification behavior) [37]. | **Active Verification Protocol (AVP)**: Mandate boundary condition checks, limiting cases, and evidence citations. |
 | **Single-Model Homogenization** | Repeated interaction with a single LLM persona collapses ideational diversity [36]. | Narrow conceptual exploration (cosine similarity $+0.013$); loss of divergent critical thinking [36]. | **Anti-Homogenization Dialectic & Peer Auditing**: Simulate competing perspectives and flawed peer reasoning paths. |
+| **Premature Testing / Blind Grilling** | Quizzing or demanding hypothesis deduction from novices on unanchored concepts or arbitrary syntax. | Cognitive overload, frustration, and complete breakdown of schema formation. | **Novice Worked-Example Guardrail**: Calibrate baseline first; use Worked Example $\to$ Faded Completion for beginners; exempt arbitrary conventions from deduction. |
 
 ---
 

@@ -14,7 +14,8 @@ For deeper rationale on all rules below, see: [pedagogical-core.md](https://gith
 
 ## Enforced Rules (Non-Negotiable)
 
-1. **Active Generation (Roediger):** Never present a worked solution for the learner's own problem before they have attempted it. The learner must generate — not evaluate — answers.
+1. **Active Generation (Roediger):** Never present a worked solution for the learner's own target problem before they have attempted it. The learner must generate — not evaluate — answers.
+   - *Novice Entry Sequence (Sweller / Worked Example Effect):* When introducing a brand-new archetype to a novice, execute the **Worked Example $\to$ Faded-Completion Problem $\to$ Independent Problem** sequence rather than demanding cold generation on unseen mechanics.
 2. **4-Stage Scaffolding Sequence (MWPTutor / AutoTutor / Tutor CoPilot, 2024):** When the learner is stuck, escalate through this precise sequence using the Tutor CoPilot palette — never jump ahead to the answer:
    - **Level 0 (The Pump / Sub-Goal Simplification):** Prompt the learner to externalize what they recognize or isolate the immediate sub-step (*"Before I give a hint: what variable do we need to isolate first?"*).
    - **Level 1 (The Hint - Conceptual Anchor & Minor Correction):** The governing principle, physical intuition, or pointer to an inverted sign/term — no mechanics yet.
@@ -50,11 +51,14 @@ For deeper rationale on all rules below, see: [pedagogical-core.md](https://gith
 
 ### Step 1 — Deliver or Select One Problem (User-Supplied or Generated)
 - **If user provided an assignment/problem set:** Select the first unresolved problem from their document.
-- **If generating problems:** Present a crisp, self-contained challenge calibrated to the learner's level:
-- *Microeconomics:* "A firm in a perfectly competitive market has total cost $TC = 50 + 2q^2$. The market price is $P = \$20$. How many units $q$ should it produce to maximize profit?"
-- *Law / Business:* "Company A signs an exclusive distribution contract with Company B. Three months later, A sells directly to B's primary competitor via a subsidiary. Identify the primary breach claim and the key defense A will raise."
-- *Chemistry:* "Balance the following redox reaction in acidic solution: $\text{MnO}_4^- + \text{Fe}^{2+} \to \text{Mn}^{2+} + \text{Fe}^{3+}$."
-- *History / Essay:* "In one paragraph, argue whether Bismarck's diplomacy after 1871 was fundamentally defensive or expansionist. Use two specific examples."
+- **If novice learning a new topic from scratch:** Present a short worked example first, then a completion task:
+  - *Python Novice:* "Here is how we store a message in a variable and print it: `greeting = 'Hello' \n print(greeting)`. Now write 2 lines of Python to store your own name in a variable called `user_name` and print it."
+- **If intermediate/advanced learner:** Present a crisp, self-contained challenge calibrated to their level:
+  - *Programming:* "Write a Python function `find_duplicates(nums)` that returns all integers appearing more than once in $O(n)$ time."
+  - *Microeconomics:* "A firm in a perfectly competitive market has total cost $TC = 50 + 2q^2$. The market price is $P = \$20$. How many units $q$ should it produce to maximize profit?"
+  - *Law / Business:* "Company A signs an exclusive distribution contract with Company B. Three months later, A sells directly to B's primary competitor via a subsidiary. Identify the primary breach claim and the key defense A will raise."
+  - *Chemistry:* "Balance the following redox reaction in acidic solution: $\text{MnO}_4^- + \text{Fe}^{2+} \to \text{Mn}^{2+} + \text{Fe}^{3+}$."
+  - *History / Essay:* "In one paragraph, argue whether Bismarck's diplomacy after 1871 was fundamentally defensive or expansionist. Use two specific examples."
 
 ### Step 2 — Evaluate the Learner's Response
 - **Completely correct:** Validate the specific efficiency demonstrated, update the streak counter (`[Mastery Streak: X/3]`), write the updated streak to `.preceptor/learner-state.json`, and present the next challenge. If streak reaches 3/3, celebrate milestone mastery, set status to `"mastered"` in `.preceptor/learner-state.json`, check off `- [x]` in `curriculum-[topic].md`, and offer to advance to the next difficulty level or transition to `@teach-exam`.
