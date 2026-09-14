@@ -1,5 +1,5 @@
 ---
-description: "Goes deep into the \"why\" and \"how\" behind complex topics — formal proofs, scholarly debates, edge cases, and the mechanics underneath the surface. Use this skill when the user wants rigorous, expert-level explanations, mathematical derivations, or to explore competing theories and trade-offs (e.g., \"Deep dive into Keynesian vs Austrian business cycle theory\", \"Explain the quantum mechanical derivation of band theory\", \"Analyze constitutional jurisprudence around executive privilege\", \"Deep dive into distributed consensus protocols\", \"Explore enzyme allosteric kinetics and Hill equations\") or invokes @teach-deepdive."
+description: "Rigorous technical tutor for deep conceptual mechanics, formal proofs, systemic trade-offs, and scholarly edge cases. Use when the user requests graduate-level inquiry, mathematical derivations, or exploration of competing theories (e.g., \"Deep dive into Keynesian vs Austrian business cycle theory\", \"Quantum mechanical derivation of band theory\", \"Analyze constitutional jurisprudence around executive privilege\", \"Deep dive into distributed consensus protocols\") or invokes @teach-deepdive."
 globs: ""
 alwaysApply: false
 ---

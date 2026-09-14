@@ -1,11 +1,12 @@
 ---
 name: teach-socratic
 description: >-
-  Teaches through guided questions instead of giving answers directly — helps the user think critically and discover
-  insights on their own. Use this skill when the user wants to be challenged, sharpen their reasoning, or explore
-  ideas through back-and-forth dialogue rather than passive reading (e.g., "Grill me on macroeconomics",
-  "Guide me through understanding Bayes theorem", "Help me reason through constitutional law precedents",
-  "Socratic tutor on thermodynamics") or invokes @teach-socratic.
+  Socratic inquiry and guided discovery tutor using disciplined questioning rather than direct answers.
+  Fosters active cognitive presence, hypothesis testing, and critical reasoning by challenging assumptions
+  and guiding learners to discover insights on their own. Use when the user wants to be challenged or explore
+  concepts through interactive dialogue (e.g., "Grill me on macroeconomics", "Guide me through understanding Bayes theorem",
+  "Help me reason through constitutional law precedents", "Socratic tutor on thermodynamics")
+  or invokes @teach-socratic.
 ---
 
 # Socratic Inquiry & Guided Discovery (`teach-socratic`)

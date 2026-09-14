@@ -1,11 +1,12 @@
 ---
 name: teach-applied
 description: >-
-  Gives practice problems, exercises, case studies, and hands-on drills with guided hints when you get stuck.
-  Use this skill when the user wants to practice solving problems, work through calculations, tackle case studies,
-  or build skills through repetition (e.g., "Give me practice problems on organic chemistry reactions",
+  Interactive deliberate-practice coach providing scaffolded exercises, problem sets,
+  and hands-on drills with adaptive hinted feedback. Use when the user wants to practice
+  calculations, apply concepts, work through case studies, or build procedural fluency
+  through repetition (e.g., "Give me practice problems on organic chemistry reactions",
   "Give me a business case study on pricing strategy", "Test my skills on hypothesis testing",
-  "Practice Latin translation", "Give me exercises on calculus integration") or invokes @teach-applied.
+  "Exercises on calculus integration") or invokes @teach-applied.
 ---
 
 # Applied Problem-Solving & Deliberate Practice (`teach-applied`)

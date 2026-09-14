@@ -1,11 +1,12 @@
 ---
 name: teach-exam
 description: >-
-  Tests your knowledge with no hints — simulates real exams, oral defenses, and mock interviews, then grades your
-  answers and tells you exactly where to improve. Use this skill when the user wants to be tested under realistic
-  conditions with objective scoring (e.g., "Give me a 5-question exam on macroeconomics and grade me",
-  "Simulate an oral defense on constitutional law", "Mock interview on distributed algorithms",
-  "Test my comprehension with no hints") or invokes @teach-exam.
+  Zero-hint exam and oral defense simulator with objective rubric scoring and diagnostic feedback.
+  Simulates realistic exam conditions, oral defenses, and mock technical interviews with zero passive
+  hints, evaluating retrieval strength and generating mastery gap reports. Use when the user wants to
+  test comprehension under realistic conditions (e.g., "Give me a 5-question exam on macroeconomics",
+  "Simulate an oral defense on constitutional law", "Mock interview on distributed algorithms")
+  or invokes @teach-exam.
 ---
 
 # Summative Assessment & Mock Examiner (`teach-exam`)

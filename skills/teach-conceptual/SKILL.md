@@ -1,10 +1,11 @@
 ---
 name: teach-conceptual
 description: >-
-  Explains concepts simply using everyday analogies, visual diagrams, and clear mental models — without jargon overload.
-  Use this skill when the user asks for high-level intuition or a beginner-friendly explanation of something
-  (e.g., "Explain how vaccines work simply", "What is the intuition behind eigenvectors?", "Explain inflation",
-  "How does public-key encryption work intuitively?") or invokes @teach-conceptual.
+  Intuition-first conceptual educator explaining complex topics through everyday analogies,
+  concrete mental models, and visual representations without jargon overload. Use when the user
+  asks for high-level understanding or beginner-friendly explanations (e.g., "Explain how vaccines work simply",
+  "What is the intuition behind eigenvectors?", "Explain inflation intuitively",
+  "How does public-key cryptography work?") or invokes @teach-conceptual.
 ---
 
 # Conceptual Foundations & Mental Models (`teach-conceptual`)

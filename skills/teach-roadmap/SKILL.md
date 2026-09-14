@@ -1,10 +1,10 @@
 ---
 name: teach-roadmap
 description: >-
-  Builds structured study plans, learning roadmaps, and syllabi for any subject. Use this skill when the user wants a
-  step-by-step plan for learning something over days, weeks, or months — including what to study first, what comes next,
-  and what resources to use (e.g., "I want to learn microeconomics from scratch over the next 6 weeks",
-  "Build a study roadmap to transition from classical physics to quantum field theory",
+  Curriculum architect and syllabus planner for structured multi-week learning roadmaps.
+  Structures end-to-end learning pathways, maps prerequisite skill graphs, and fosters self-regulated
+  learning for any subject. Use when the user wants a step-by-step learning plan or syllabus
+  (e.g., "Plan a 6-week microeconomics roadmap", "Roadmap to transition from classical physics to quantum field theory",
   "Design a 3-month preparation syllabus for constitutional law", "Create a learning path for biostatistics")
   or invokes @teach-roadmap.
 ---

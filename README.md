@@ -1,7 +1,7 @@
 # 🎓 Preceptor
 
 [![Release: 1.0.0](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/samuli-h/Preceptor/releases/tag/v1.0.0)
-[![Agent Skills](https://img.shields.io/badge/Agent_Skills-Preceptor-blue.svg)](https://skills.sh)
+[![skills.sh](https://img.shields.io/badge/skills.sh-samuli--h%2Fpreceptor-000000.svg?logo=vercel&logoColor=white)](https://skills.sh/samuli-h/preceptor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Multi-Harness](https://img.shields.io/badge/Harnesses-Cursor%20%7C%20Claude%20%7C%20Windsurf%20%7C%20Copilot%20%7C%20Antigravity-brightgreen.svg)]()
 
@@ -13,9 +13,14 @@ Designed to overcome the classic pitfalls of AI tutors—monologue lectures, spo
 
 ## ⚡ Quick Install
 
+Install all 7 skills across any supported agent harness with one command:
+
 ```bash
-# Recommended: Install via open Agent Skills (skills.sh)
+# Install via open Agent Skills directory (skills.sh)
 npx skills add samuli-h/preceptor
+
+# Or install a single specialized skill (e.g. Socratic tutor):
+# npx skills add samuli-h/preceptor --skill teach-socratic
 
 # Or via 1-liner installer (auto-detects all installed harnesses):
 curl -fsSL https://raw.githubusercontent.com/samuli-h/Preceptor/main/scripts/install.sh | bash       # macOS/Linux
@@ -53,19 +58,19 @@ gh skill install samuli-h/preceptor --all --agent cursor
 
 ---
 
-## 🔄 The 7 Skills Across the Learning Lifecycle
+## 🔄 Pedagogical Modes Across the Learning Lifecycle
 
-You don't need to choose which skill to use ahead of time. Just prompt **`@teach <anything>`**, and Preceptor diagnoses your goal in one turn and routes you to the right phase of the learning journey—or invoke any specialized skill directly:
+You don't need to guess which teaching style or skill you need ahead of time. Just prompt **`@teach <anything>`**, and Preceptor will diagnose your goal and route you to the optimal pedagogical tier—or invoke any specialist skill directly:
 
-| Lifecycle Stage | Skill | Mode | What It Does | Trigger Example |
+| Mode / Intent | Skill | Pedagogical Role | What It Does | Trigger Example |
 | :--- | :--- | :--- | :--- | :--- |
 | **Router** | **`@teach`** | **Master Orchestrator** | Diagnoses your learning goal in 1 turn or automatically routes uploaded course materials. | `@teach I want to learn monetary policy` |
-| **Phase 1 · Plan** | **`@teach-roadmap`** | **Curriculum Architect** | Generates multi-week study plans, milestone checklists, and visual prerequisite maps. | `@teach-roadmap 8-week syllabus for microeconomics from scratch` |
-| **Phase 2 · Learn** | **`@teach-conceptual`** | **Mental Models & Intuition** | Explains complex ideas using grounded analogies, visuals, and unassisted transfer checks. | `@teach-conceptual Explain opportunity cost with an everyday analogy` |
-| **Phase 3 · Explore** | **`@teach-socratic`** | **Guided Discovery** | Never gives direct answers; challenges your reasoning with one focused question per turn. | `@teach-socratic Guide me through why the Weimar Republic collapsed` |
-| **Phase 4 · Practice** | **`@teach-applied`** | **Deliberate Practice** | Practice problem coach with progressive hints and streak-based mastery checks. | `@teach-applied Practice problem on deadweight loss with hints` |
-| **Phase 5 · Deepen** | **`@teach-deepdive`** | **First Principles & Rigor** | Advanced rigor: formal derivations, boundary conditions, and competing perspectives. | `@teach-deepdive Analyze Keynesian vs Austrian business cycle theory` |
-| **Phase 6 · Test** | **`@teach-exam`** | **Closed-Book Mock Examiner** | Realistic closed-book tests and oral defenses with zero hints, objective scoring, and gap reports. | `@teach-exam 3-question closed-book exam on macroeconomics with grading` |
+| **Plan** | **`@teach-roadmap`** | **Curriculum Architect** | Generates multi-week study plans, milestone checklists, and visual prerequisite maps. | `@teach-roadmap 8-week syllabus for microeconomics from scratch` |
+| **Understand** | **`@teach-conceptual`** | **Mental Models & Intuition** | Explains complex ideas using grounded analogies, visuals, and unassisted transfer checks. | `@teach-conceptual Explain opportunity cost with an everyday analogy` |
+| **Discover** | **`@teach-socratic`** | **Guided Discovery** | Never gives direct answers; challenges your reasoning with one focused question per turn. | `@teach-socratic Guide me through why the Weimar Republic collapsed` |
+| **Apply** | **`@teach-applied`** | **Deliberate Practice** | Practice problem coach with progressive hints and streak-based mastery checks. | `@teach-applied Practice problem on deadweight loss with hints` |
+| **Deepen** | **`@teach-deepdive`** | **First Principles & Rigor** | Advanced rigor: formal derivations, boundary conditions, and competing perspectives. | `@teach-deepdive Analyze Keynesian vs Austrian business cycle theory` |
+| **Benchmark** | **`@teach-exam`** | **Closed-Book Mock Examiner** | Realistic closed-book tests and oral defenses with zero hints, objective scoring, and gap reports. | `@teach-exam 3-question closed-book exam on macroeconomics with grading` |
 
 ---
 

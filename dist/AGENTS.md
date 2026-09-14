@@ -7,7 +7,7 @@ This repository contains Preceptor, an adaptive educational skill suite. When th
 ## The 7 Pedagogical Skills
 
 ### Skill: `teach`
-**When to activate:** Starting point for learning any subject. Use this skill when the user wants to learn something but hasn't specified how (e.g., "Teach me game theory", "Help me understand immunology", "I want to learn macroeconomics", "Plan a study path for organic chemistry", "Test my knowledge on constitutional law") or explicitly calls @teach. Figures out what the user needs and routes them to the right teaching approach — whether that's building intuition, practicing problems, planning a study schedule, or taking a test.
+**When to activate:** AI pedagogical orchestrator and active-learning mentor for mastering any subject. Diagnoses user learning goals and routes to the optimal pedagogical approach - whether building intuition, Socratic inquiry, deliberate practice drills, rigorous deep dives, summative exam simulation, or multi-week curriculum roadmaps. Use when the user wants to learn, study, or understand a topic (e.g., "Teach me game theory", "Help me understand immunology", "I want to learn macroeconomics") or explicitly calls @teach.
 
 # Preceptor: Master Pedagogical Orchestrator (`teach`)
 
@@ -110,7 +110,7 @@ On transition: acknowledge the shift in one sentence, then immediately read and 
 ---
 
 ### Skill: `teach-applied`
-**When to activate:** Gives practice problems, exercises, case studies, and hands-on drills with guided hints when you get stuck. Use this skill when the user wants to practice solving problems, work through calculations, tackle case studies, or build skills through repetition (e.g., "Give me practice problems on organic chemistry reactions", "Give me a business case study on pricing strategy", "Test my skills on hypothesis testing", "Practice Latin translation", "Give me exercises on calculus integration") or invokes @teach-applied.
+**When to activate:** Interactive deliberate-practice coach providing scaffolded exercises, problem sets, and hands-on drills with adaptive hinted feedback. Use when the user wants to practice calculations, apply concepts, work through case studies, or build procedural fluency through repetition (e.g., "Give me practice problems on organic chemistry reactions", "Give me a business case study on pricing strategy", "Test my skills on hypothesis testing", "Exercises on calculus integration") or invokes @teach-applied.
 
 # Applied Problem-Solving & Deliberate Practice (`teach-applied`)
 
@@ -175,7 +175,7 @@ End every turn with a specific request: *"Now apply that method to step 2"* / *"
 ---
 
 ### Skill: `teach-conceptual`
-**When to activate:** Explains concepts simply using everyday analogies, visual diagrams, and clear mental models — without jargon overload. Use this skill when the user asks for high-level intuition or a beginner-friendly explanation of something (e.g., "Explain how vaccines work simply", "What is the intuition behind eigenvectors?", "Explain inflation", "How does public-key encryption work intuitively?") or invokes @teach-conceptual.
+**When to activate:** Intuition-first conceptual educator explaining complex topics through everyday analogies, concrete mental models, and visual representations without jargon overload. Use when the user asks for high-level understanding or beginner-friendly explanations (e.g., "Explain how vaccines work simply", "What is the intuition behind eigenvectors?", "Explain inflation intuitively", "How does public-key cryptography work?") or invokes @teach-conceptual.
 
 # Conceptual Foundations & Mental Models (`teach-conceptual`)
 
@@ -235,7 +235,7 @@ Ask the learner to apply the newly formed mental model to a structurally identic
 ---
 
 ### Skill: `teach-deepdive`
-**When to activate:** Goes deep into the "why" and "how" behind complex topics — formal proofs, scholarly debates, edge cases, and the mechanics underneath the surface. Use this skill when the user wants rigorous, expert-level explanations, mathematical derivations, or to explore competing theories and trade-offs (e.g., "Deep dive into Keynesian vs Austrian business cycle theory", "Explain the quantum mechanical derivation of band theory", "Analyze constitutional jurisprudence around executive privilege", "Deep dive into distributed consensus protocols", "Explore enzyme allosteric kinetics and Hill equations") or invokes @teach-deepdive.
+**When to activate:** Rigorous technical tutor for deep conceptual mechanics, formal proofs, systemic trade-offs, and scholarly edge cases. Use when the user requests graduate-level inquiry, mathematical derivations, or exploration of competing theories (e.g., "Deep dive into Keynesian vs Austrian business cycle theory", "Quantum mechanical derivation of band theory", "Analyze constitutional jurisprudence around executive privilege", "Deep dive into distributed consensus protocols") or invokes @teach-deepdive.
 
 # Advanced Deep Dives & First Principles (`teach-deepdive`)
 
@@ -290,7 +290,7 @@ End with one rigorous inquiry that demands the learner synthesize, test a bounda
 ---
 
 ### Skill: `teach-exam`
-**When to activate:** Tests your knowledge with no hints — simulates real exams, oral defenses, and mock interviews, then grades your answers and tells you exactly where to improve. Use this skill when the user wants to be tested under realistic conditions with objective scoring (e.g., "Give me a 5-question exam on macroeconomics and grade me", "Simulate an oral defense on constitutional law", "Mock interview on distributed algorithms", "Test my comprehension with no hints") or invokes @teach-exam.
+**When to activate:** Zero-hint exam and oral defense simulator with objective rubric scoring and diagnostic feedback. Simulates realistic exam conditions, oral defenses, and mock technical interviews with zero passive hints, evaluating retrieval strength and generating mastery gap reports. Use when the user wants to test comprehension under realistic conditions (e.g., "Give me a 5-question exam on macroeconomics", "Simulate an oral defense on constitutional law", "Mock interview on distributed algorithms") or invokes @teach-exam.
 
 # Summative Assessment & Mock Examiner (`teach-exam`)
 
@@ -384,7 +384,7 @@ To close the identified gaps before your next assessment:
 ---
 
 ### Skill: `teach-roadmap`
-**When to activate:** Builds structured study plans, learning roadmaps, and syllabi for any subject. Use this skill when the user wants a step-by-step plan for learning something over days, weeks, or months — including what to study first, what comes next, and what resources to use (e.g., "I want to learn microeconomics from scratch over the next 6 weeks", "Build a study roadmap to transition from classical physics to quantum field theory", "Design a 3-month preparation syllabus for constitutional law", "Create a learning path for biostatistics") or invokes @teach-roadmap.
+**When to activate:** Curriculum architect and syllabus planner for structured multi-week learning roadmaps. Structures end-to-end learning pathways, maps prerequisite skill graphs, and fosters self-regulated learning for any subject. Use when the user wants a step-by-step learning plan or syllabus (e.g., "Plan a 6-week microeconomics roadmap", "Roadmap to transition from classical physics to quantum field theory", "Design a 3-month preparation syllabus for constitutional law", "Create a learning path for biostatistics") or invokes @teach-roadmap.
 
 # Curriculum Architecture & Study Roadmaps (`teach-roadmap`)
 
@@ -458,7 +458,7 @@ Ask the learner if they want to adjust pacing or resources. When confirmed:
 ---
 
 ### Skill: `teach-socratic`
-**When to activate:** Teaches through guided questions instead of giving answers directly — helps the user think critically and discover insights on their own. Use this skill when the user wants to be challenged, sharpen their reasoning, or explore ideas through back-and-forth dialogue rather than passive reading (e.g., "Grill me on macroeconomics", "Guide me through understanding Bayes theorem", "Help me reason through constitutional law precedents", "Socratic tutor on thermodynamics") or invokes @teach-socratic.
+**When to activate:** Socratic inquiry and guided discovery tutor using disciplined questioning rather than direct answers. Fosters active cognitive presence, hypothesis testing, and critical reasoning by challenging assumptions and guiding learners to discover insights on their own. Use when the user wants to be challenged or explore concepts through interactive dialogue (e.g., "Grill me on macroeconomics", "Guide me through understanding Bayes theorem", "Help me reason through constitutional law precedents", "Socratic tutor on thermodynamics") or invokes @teach-socratic.
 
 # Socratic Inquiry & Guided Discovery (`teach-socratic`)
 

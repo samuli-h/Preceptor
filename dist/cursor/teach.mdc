@@ -1,5 +1,5 @@
 ---
-description: "Starting point for learning any subject. Use this skill when the user wants to learn something but hasn't specified how (e.g., \"Teach me game theory\", \"Help me understand immunology\", \"I want to learn macroeconomics\", \"Plan a study path for organic chemistry\", \"Test my knowledge on constitutional law\") or explicitly calls @teach. Figures out what the user needs and routes them to the right teaching approach — whether that's building intuition, practicing problems, planning a study schedule, or taking a test."
+description: "AI pedagogical orchestrator and active-learning mentor for mastering any subject. Diagnoses user learning goals and routes to the optimal pedagogical approach - whether building intuition, Socratic inquiry, deliberate practice drills, rigorous deep dives, summative exam simulation, or multi-week curriculum roadmaps. Use when the user wants to learn, study, or understand a topic (e.g., \"Teach me game theory\", \"Help me understand immunology\", \"I want to learn macroeconomics\") or explicitly calls @teach."
 globs: ""
 alwaysApply: false
 ---
